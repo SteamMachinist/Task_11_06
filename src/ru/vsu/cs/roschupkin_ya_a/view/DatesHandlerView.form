@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="ru.vsu.cs.roschupkin_ya_a.view.DatesHandlerView">
+  <grid id="27dc6" binding="mainPanel" layout-manager="GridLayoutManager" row-count="8" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="6" left="6" bottom="6" right="6"/>
+    <constraints>
+      <xy x="20" y="20" width="542" height="400"/>
+    </constraints>
+    <properties>
+      <minimumSize width="200" height="150"/>
+      <preferredSize width="640" height="320"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <scrollpane id="74561" binding="initialTextScrollPane">
+        <constraints>
+          <grid row="1" column="0" row-span="7" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="4b569" class="javax.swing.JTextArea" binding="initialTextArea">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <scrollpane id="9bda" binding="extractedScrollPane">
+        <constraints>
+          <grid row="1" column="2" row-span="7" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="1074c" class="javax.swing.JTextArea" binding="extractedTextArea">
+            <constraints/>
+            <properties/>
+          </component>
+        </children>
+      </scrollpane>
+      <component id="432b3" class="javax.swing.JLabel" binding="initialTextLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Initial text:⠀⠀⠀⠀"/>
+        </properties>
+      </component>
+      <component id="2a857" class="javax.swing.JLabel" binding="extractedDatesLabel">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Exctracted dates:"/>
+        </properties>
+      </component>
+      <component id="5dc30" class="javax.swing.JButton" binding="extractDatesButton">
+        <constraints>
+          <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Extract"/>
+        </properties>
+      </component>
+      <component id="f6f1f" class="javax.swing.JCheckBox" binding="dayMonthNumberYearCheckBox">
+        <constraints>
+          <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="DD.MM.YYYY"/>
+          <toolTipText value="Extract dates like 22.03.2008"/>
+        </properties>
+      </component>
+      <component id="9115c" class="javax.swing.JCheckBox" binding="dayMonthNameYearCheckBox">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="D Month YYYY"/>
+          <toolTipText value="Extaract dates like 3 November 1997"/>
+        </properties>
+      </component>
+      <component id="c7610" class="javax.swing.JCheckBox" binding="dayMonthNameCheckBox">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="D Month"/>
+          <toolTipText value="Extract dates like 25 December"/>
+        </properties>
+      </component>
+      <vspacer id="94e2c">
+        <constraints>
+          <grid row="7" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="6a586" class="javax.swing.JLabel" binding="formatsLabel">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Use date formats:"/>
+        </properties>
+      </component>
+      <component id="99080" class="javax.swing.JCheckBox" binding="monthNameDayCommaYearCheckBox">
+        <constraints>
+          <grid row="5" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="Month D, YYYY "/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+</form>
